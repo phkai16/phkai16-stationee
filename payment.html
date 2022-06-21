@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stationee - Payment</title>
+
+    <link
+      rel="shortcut icon"
+      href="./images/logo-favi.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.green.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/payment.css"/>
+  </head>
+
+  <body>
+     <!-- Header -->
+     <header>
+      <div class="contianer-fluid header">
+          <div class="container">
+              <div class="row align-items-center py-lg-3 py-2">
+                  <div id="icon-bars" class="col-2 d-lg-none d-block mt-2 ">
+                      
+                          <i class="fa fa-bars icon-bars"></i>
+                        
+                  </div>
+                  <div class="col-lg-3 col-8 header-logo">
+                      <a href="./index.html">
+                          <img src="./images/logo.png" alt="" class="d-lg-block d-none">
+                          <img src="./images/logo-white.png" alt="" class="d-lg-none d-block">
+                      </a>
+                  </div>
+                  <div class="col-lg-7 d-lg-block d-none text-center">
+                      <form action="" class="header-search d-flex">
+                          <input type="text" placeholder="Search...">
+                          <button><i class="fas fa-search"></i></button>
+                      </form>
+                  </div>
+                  <div class="col-lg-2 col-2">
+                      <ul class="header-icons mt-3">
+                        <!-- Sign In Button -->
+                          <li>
+                            <a href="" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-user mr-3"></i></a>
+                          </li>
+                          <li>
+                            <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                          </li>
+                        </ul>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+      <div class="container-fluid nav-desktop d-lg-block d-none">
+          <div class="container py-2">
+              <div class="row">
+                  <div class="col-8 offset-2">
+                      <ul class="m-0 snip1155">
+                          <li><a href="./index.html">Home</a></li>
+                          <li><a href="./about.html">About Us</a></li>
+                          <li><a href="./product.html">Product</a></li>
+                          <li><a href="./blog.html">Blog</a></li>
+                          <li><a href="./contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Nav Mobile -->
+      <div id="nav-mobile" class="nav-mobile container-fluid d-lg-none">
+      <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="header-search">
+                <form action="" class="d-flex justify-content-center">
+                  <input type="text" placeholder="Search...">
+                  <button><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="header-navbar">
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  
+                  <li>
+                    <a href="./about.html"> About Us</a>
+                  </li>
+
+                  <li>
+                      <a href="./product.html">Product</a>
+                    </li>
+                    
+                  
+                  <li><a href="./blog.html">Blog</a></li>
+                 
+                  
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+  </header>
+
+  <!-- Sign In - Sign Up -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+    
+    <!-- Body -->
+    <div class="modal-body p-0">
+        <!-- Code pen -->
+        
+            
+        <div class="sing-log-wrap">
+            <div class="container">
+                <div class="row" style="background-color: transparent !important;">
+                    <div class="col-12 p-0">
+                        <div class="form-area m-0">
+                            <button type="button" class="close-btn-user p-4" data-dismiss="modal" aria-label="Close">
+                              <i class="fa fa-times"></i>
+                            </button>
+                            <div class="form-sing">
+                                <ul class="nav nav-tabs p-0" role="tablist">
+                                    <li role="presentation" ><a href="#login" aria-controls="Log In" role="tab" data-toggle="tab" class="active pb-1 Spartan-SemiBold">Sign In</a></li>
+                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class=" pb-1 Spartan-SemiBold">Sign Up</a></li>
+                                    
+                                </ul>
+    
+    
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active form-are" id="login">
+                                        <form action="">
+                                            <div class="form-bor">
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Username</label>
+                                                    <input type="text" name="username" placeholder="Your email...">
+                                                </div>
+    
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Password</label>
+                                                    <input type="password" name="password" placeholder="Your password...">
+                                                </div>
+                                                <div class="form-input-checkbox p-0 m-0">
+                                                    <input type="checkbox" id="test1" />
+                                                    <label for="test1" class="p-0 m-0">Keep me Signed in</label>
+                                                </div>
+                                                <div class="form-input-group">
+                                                    <button class="mt-5">Sing in</button>
+                                                </div>
+                                            </div><a class="forgot-pass" href="">Forgot Password?</a>
+                                        </form>
+    
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">
+                                        <form action="">
+                                            <div class="form-bor">
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Username</label>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <input type="text" name="fst-username" placeholder="Frist name">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <input type="text" name="lst-username" placeholder="Last name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Email</label>
+                                                    <input type="text" name="email" placeholder="Email">
+                                                    <input type="text" name="re-email" placeholder="Confirm email">
+                                                </div>
+    
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Password</label>
+                                                    <input type="password" name="password" placeholder="Password">
+                                                    <input type="password" name="password" placeholder="Confirm password">
+                                                </div>
+                                              
+                                              
+                                                <div class="form-input-group">
+                                                    <button>Sing Up</button>
+                                                </div>
+                                            </div>
+                                            <a class="forgot-pass" href="index.html">Already have an account? <strong>Sign in</strong> </a>
+                                        </form>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         
+    
+    </div>
+    
+  </div>
+</div>
+  </div>
+  
+
+    <!-- Banner -->
+    <div class="banner">
+      <div class="container-fluid banner-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3 class="banner-title">PAYMENT</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-0">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Payment</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content  my-5 py-5">
+      <div class="container">
+      
+        <div class="row">
+          <div class="col-lg-4 order-lg-2 mb-4">
+            <h5 class="d-flex justify-content-between align-items-center mb-5">
+              <span class="Spartan-SemiBold">Your cart:</span>
+              <span class="badge text-white bg-main badge-pill">5</span>
+            </h5>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div class="d-flex">
+                  <img src="./images/product-cart-1.jpg" alt="" class="mr-3 img-pd">
+                  <div>
+                    <p class="my-0 name-pd">Green Notebook</p>
+                    <small class="text-muted">x1</small>
+                  </div>
+                </div>
+                <span class="Spartan-SemiBold">$7.00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div class="d-flex">
+                  <img src="./images/product-home-14.jpg" alt="" class="mr-3 img-pd">
+                  <div>
+                    <p class="my-0 name-pd">Stick Note</p>
+                    <small class="text-muted">x1</small>
+                  </div>
+                </div>
+                <span class="Spartan-SemiBold">$3.00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div class="d-flex">
+                  <img src="./images/product-home-21.jpg" alt="" class="mr-3 img-pd">
+                  <div>
+                    <p class="my-0 name-pd">Bear Crayons</p>
+                    <small class="text-muted">x1</small>
+                  </div>
+                </div>
+                <span class="Spartan-SemiBold">$24.50</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div class="d-flex">
+                  <img src="./images/product-home-3.jpg" alt="" class="mr-3 img-pd">
+                  <div>
+                    <p class="my-0 name-pd">Memo Pad</p>
+                    <small class="text-muted">x1</small>
+                  </div>
+                </div>
+                <span class="Spartan-SemiBold">$1.50</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div class="d-flex">
+                  <img src="./images/product-home-1.jpg" alt="" class="mr-3 img-pd">
+                  <div>
+                    <p class="my-0 name-pd">Pink Note</p>
+                    <small class="text-muted">x1</small>
+                  </div>
+                </div>
+                <span class="Spartan-SemiBold">$7.00</span>
+              </li>
+             
+              
+              
+              
+              <li class="list-group-item p-0 px-3">
+                <hr class="promo-border">
+              </li>
+              <li class="list-group-item d-flex justify-content-between ">
+                <div class="text-main">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>EXAMPLECODE</small>
+                </div>
+                <span class="text-main Spartan-SemiBold">-$15.00</span>
+              </li>
+              <li class="list-group-item p-0 px-3">
+                <hr class="promo-border">
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total</span>
+                <strong>$27.00</strong>
+              </li>
+            </ul>
+      
+            <h6 class="mt-5 pt-3">Promotion code:</h6>
+              <form action="" class="header-search d-flex justify-content-center mt-3">
+                <input type="text" placeholder="Code coupon...">
+                <button>Apply</button>
+              </form>
+          </div>
+          <div class="col-12 d-lg-none d-block">
+            <hr class="border-mobile">
+          </div>
+          <div class="col-lg-8 order-lg-1">
+            <h5 class="mb-4 mt-lg-0 mt-4">Billing Address</h5>
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-5">
+                  <label for="firstName">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                  <label for="lastName">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+              </div>
+      
+              <div class="mb-5">
+                <label for="username">Username</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="username" placeholder="Username..." required>
+
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your username is required.
+                  </div>
+                </div>
+              </div>
+      
+              <div class="mb-5">
+                <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="Your email...">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+      
+              <div class="mb-5">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="10 Main Street..." required>
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+      
+              <div class="mb-5">
+                <label for="address2">Note <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite...">
+              </div>
+      
+              <div class="row">
+                <div class="col-md-5 mb-5">
+                  <label for="country">Province</label>
+                  <select class="custom-select d-block w-100" id="country" required>
+                    <option selected>Choose...</option>
+                    <option>Ho Chi Minh</option>
+                    <option>Ha Noi</option>
+                    <option>Da Nang</option>
+                    <option>Nha Trang</option>
+                    <option>Hue</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid province.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                  <label for="state">District</label>
+                  <select class="custom-select d-block w-100" id="state" required>
+                    <option selected>Choose...</option>
+                    <option>District 1</option>
+                    <option>District 3</option>
+                    <option>District 7</option>
+                    <option>District 10</option>
+                    <option>Tan Binh District</option>
+                    <option>Binh Thanh District</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid district.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-5">
+                  <label for="zip">Zip</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+              <hr class="mb-4">
+              <div class="custom-control custom-checkbox pt-4">
+                <input type="checkbox" class="custom-control-input" id="same-address">
+                <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+              </div>
+              <div class="custom-control custom-checkbox pt-3 pb-4">
+                <input type="checkbox" class="custom-control-input" id="save-info">
+                <label class="custom-control-label" for="save-info">Save this information for next time</label>
+              </div>
+              <hr class="mb-4">
+      
+              <h5 class="mb-3">Payment</h5>
+      
+              <div class="d-block mt-3 mb-5">
+                <div class="custom-control custom-radio">
+                  <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                  <label class="custom-control-label" for="credit">Credit card</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                  <label class="custom-control-label" for="debit">Debit card</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                  <label class="custom-control-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-5">
+                  <label for="cc-name">Name on card</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-muted">Full name as displayed on card</small>
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                  <label for="cc-number">Credit card number</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 mb-5">
+                  <label for="cc-expiration">Expiration</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+                <div class="col-md-3 mb-5">
+                  <label for="cc-cvv">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+              <hr class="mb-4">
+              <button class="btn-main btn-lg btn-block" type="submit">Continue to checkout</button>
+            </form>
+          </div>
+        </div>
+      
+       
+      </div>
+
+        
+      
+
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+
+
+
+
+
+
+
+    
+
+    <!-- Subscribe -->
+    <div class="subscribe mt-5 pt-5">
+      <div class="container-fluid collection-bg py-5 mt-5">
+        <div class="container py-5">
+          
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="title text-center">
+                <h5 class="Pacifico text-main pb-2">Get Quick Notifications</h5>
+                <h3 class="Spartan-SemiBold">SUBSCRIBE FOR NEWS</h3>
+                <hr role="tournament6">
+                <form action="" class="header-search d-flex justify-content-center mt-5">
+                  <input type="text" placeholder="Enter your email...">
+                  <button><i class="fab fa-telegram-plane"></i></button>
+              </form>
+            </div>
+          </div>
+            
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+       <!-- Footer -->
+       <footer class="container-fluid footer-bg mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-lg-4 col-md-5 offset-md-1 offset-lg-0 offset-0 col-12 footer-logo mb-md-0 mb-3">
+                    <a>
+                        <img src="./images/logo.png" alt="">
+                    </a>
+
+                    <p class="py-3 pr-3 d-md-block d-none">
+                        We provide all items for students and office workers. Committed to ensuring product quality as well as service quality.
+                    </p>
+
+                    <ul class="d-flex my-md-0 my-4">
+                        <li class=""><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class=""><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class=""><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li class=""><a href=""><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <!-- Useful Link-->
+                <div class="col-lg-2 col-md-5 offset-md-1 offset-lg-0 col-12 footer-link d-md-block d-none">
+                  <h6 class="pt-2 pb-3">USEFUL LINKS</h6>
+                  <ul>
+                      <li class="pb-3"><a href="./blog.html">Blog</a></li>
+                      <li class="pb-3"><a href="./faq.html">FAQ</a></li>
+                      <li class="pb-3"><a href="./news.html">News</a></li>
+                      <li class="pb-3"><a href="./contact.html">Contact</a></li>
+                      <li class="pb-3"><a href="./recruiment.html">Recruitment</a></li>
+                      <li class="pb-3"><a href="./term.html">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+                <!-- Useful Link Mobile-->
+                <div class="col-lg-2 col-md-6 col-12 footer-link d-md-none d-block" id="icon-useful-link">
+                  <h6 class="pt-2 pb-3">USEFUL LINKS <i class="fa fa-caret-down ml-2 d-md-none d-inline"></i> </h6>
+                  <ul id="box-useful-link">
+                      <li class="pb-3"><a href="./blog.html">Blog</a></li>
+                      <li class="pb-3"><a href="./faq.html">FAQ</a></li>
+                      <li class="pb-3"><a href="./news.html">News</a></li>
+                      <li class="pb-3"><a href="./contact.html">Contact</a></li>
+                      <li class="pb-3"><a href="./recruiment.html">Recruitment</a></li>
+                      <li class="pb-3"><a href="./term.html">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+                <!-- Categories -->
+                <div class="col-lg-3 col-md-5 offset-md-1 offset-lg-0 offset-0 col-12 footer-link categories-link d-md-block d-none">
+                  <h6 class="pt-2 pb-3">CATEGORY  <i class="fa fa-caret-down ml-2 d-md-none d-inline"></i></h6>
+                  <ul>
+                      <li class="pb-3"><a href="./product.html">Pen & Pencils</a></li>
+                      <li class="pb-3"><a href="./product.html">Book & Stationary </a></li>
+                      <li class="pb-3"><a href="./product.html">Decorations</a></li>
+                      <li class="pb-3"><a href="./product.html">Notebook</a></li>
+                      <li class="pb-3"><a href="./product.html">School Supplies</a></li>
+                      <li class="pb-3"><a href="./product.html">Paper & Card</a></li>
+                  </ul>
+                </div>
+                <!-- Categories Mobile-->
+                <div class="col-lg-2 col-md-6 col-12 footer-link d-md-none d-block" id="icon-category">
+                  <h6 class="pt-2 pb-3">CATEGORY <i class="fa fa-caret-down ml-2 d-md-none d-inline"></i> </h6>
+                  <ul id="box-category">
+                    <li class="pb-3"><a href="./product.html">Pen & Pencils</a></li>
+                    <li class="pb-3"><a href="./product.html">Book & Stationary </a></li>
+                    <li class="pb-3"><a href="./product.html">Decorations</a></li>
+                    <li class="pb-3"><a href="./product.html">Notebook</a></li>
+                    <li class="pb-3"><a href="./product.html">School Supplies</a></li>
+                    <li class="pb-3"><a href="./product.html">Paper & Card</a></li>
+                  </ul>
+                </div>
+                <!-- Store info -->
+                <div class="col-lg-3 col-md-5 offset-md-1 offset-lg-0 col-12 footer-link d-md-block d-none">
+                    <h6 class="pt-2 pb-3">STORE INFO</h5>
+                    <ul class="mt-3 footer-list">
+                    <li class="d-flex pb-2">
+                        <i class="fas fa-map-marker-alt pr-3"></i>
+                        <p>30 Road Fratton, Australia</p>
+                    </li>
+                    <li class="d-flex pb-2">
+                        <i class="fas fa-phone-alt pr-3"></i>
+                        <p>1-888-104-2022</p>
+                    </li>
+                    <li class="d-flex pb-2">
+                        <i class="fas fa-envelope  pr-3"></i>
+                        <p>stationee@gmail.com</p>
+                    </li>
+
+                    <h6 style="font-family: Spartan-Semibold;" class="pb-2 mt-4">Open Hours:</h6>
+                    <p>Mon – Sun: 8 AM – 9 PM</p>
+                </ul>
+                </div>
+                <!-- Store info Mobile-->
+                <div class="col-lg-3 col-md-6 col-12 footer-link d-md-none d-block" id="icon-store">
+                  <h6 class="pt-2 pb-3">STORE INFO <i class="fa fa-caret-down ml-2 d-md-none d-inline"></i></h5>
+                  <ul class="mt-3 footer-list" id="box-store">
+                  <li class="d-flex pb-2">
+                      <i class="fas fa-map-marker-alt pr-3"></i>
+                      <p>30 Road Fratton, Australia</p>
+                  </li>
+                  <li class="d-flex pb-2">
+                      <i class="fas fa-phone-alt pr-3"></i>
+                      <p>1-888-104-2022</p>
+                  </li>
+                  <li class="d-flex pb-2">
+                      <i class="fas fa-envelope  pr-3"></i>
+                      <p>stationee@gmail.com</p>
+                  </li>
+
+                </ul>
+                <h6 style="font-family: Spartan-Semibold;" class="pb-2 mt-4">Open Hours:</h6>
+                <p>Mon – Sun: 8 AM – 9 PM</p>
+              </div>
+
+                
+                
+            </div>
+        </div>
+        <!-- Copy right -->
+        <div class="container-fluid bg-main">
+            <div class="container py-2">
+                <div class="row footer-link p-0 text-white">
+                    <div class="col-12 m-0 footer-icon d-md-flex d-block justify-content-between align-items-center text-md-left text-center">
+                        <p class="m-0 pt-md-0 pt-2">© 2022 Stationee –  All rights reserved</p>
+                        
+                        <ul class="d-flex justify-content-md-between justify-content-center align-items-center m-0 mt-md-0 mt-3 pt-2">
+                            <li class=""><i class="fab fa-cc-jcb"></i></i></li>
+                            <li class="pl-3"><i class="fab fa-cc-diners-club"></i></li>
+                            <li class="pl-3"><i class="fab fa-cc-paypal"></i></li>
+                            <li class="pl-3"><i class="fab fa-cc-mastercard"></i></li>
+                            <li class="pl-3"><i class="fab fa-cc-discover"></i></li>
+                            <li class="pl-3"><i class="fab fa-cc-visa"></i></li>
+                        </ul>
+    
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+      <!-- Snipper -->
+      <script src="./js/bootstrap-input-spinner.js"></script>
+      <script src="./js/custom-editors.js"></script>
+
+    <!-- Jquery Nav Mobile -->
+    <script>
+      $(document).ready(function () {
+        // Nav Mobile
+        $("#nav-mobile").hide();
+        $("#icon-bars").click(function () {
+          $("#nav-mobile").slideToggle();
+        });
+
+        // Footer
+        // Useful Links
+        $("#box-useful-link").hide();
+        $("#icon-useful-link").click(function () {
+          $("#box-useful-link").slideToggle();
+        });
+        // Category
+        $("#box-category").hide();
+        $("#icon-category").click(function () {
+          $("#box-category").slideToggle();
+        });
+        // Store
+        $("#box-store").hide();
+        $("#icon-store").click(function () {
+          $("#box-store").slideToggle();
+        });
+
+  
+       
+       
+
+        // Filter Mobile
+        $("#filter-mobile").hide();
+        $("#icon-filter").click(function () {
+          $("#filter-mobile").slideToggle();
+
+        });
+        
+    
+        $("#btn-filter-mobile, #btn-clear-mobile").click(function(){
+          $("#filter-mobile").fadeOut();
+          
+        });
+        
+      });
+    </script>
+
+
+
+    
+
+    <!-- Number Snippet -->
+    <script src="./src/bootstrap-input-spinner.js"></script>
+    <script>
+        $("input[type='number']").inputSpinner()
+    </script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stationee - Term</title>
+
+    <link
+      rel="shortcut icon"
+      href="./images/logo-favi.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.green.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/home.css"> 
+    <link rel="stylesheet" href="./css/term.css"/>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="contianer-fluid header">
+          <div class="container">
+              <div class="row align-items-center py-lg-3 py-2">
+                  <div id="icon-bars" class="col-2 d-lg-none d-block mt-2 ">
+                      
+                          <i class="fa fa-bars icon-bars"></i>
+                        
+                  </div>
+                  <div class="col-lg-3 col-8 header-logo">
+                      <a href="./index.html">
+                          <img src="./images/logo.png" alt="" class="d-lg-block d-none">
+                          <img src="./images/logo-white.png" alt="" class="d-lg-none d-block">
+                      </a>
+                  </div>
+                  <div class="col-lg-7 d-lg-block d-none text-center">
+                      <form action="" class="header-search d-flex">
+                          <input type="text" placeholder="Search...">
+                          <button><i class="fas fa-search"></i></button>
+                      </form>
+                  </div>
+                  <div class="col-lg-2 col-2">
+                      <ul class="header-icons mt-3">
+                        <!-- Sign In Button -->
+                          <li>
+                            <a href="" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-user mr-3"></i></a>
+                          </li>
+                          <li>
+                            <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                          </li>
+                        </ul>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+      <div class="container-fluid nav-desktop d-lg-block d-none">
+          <div class="container py-2">
+              <div class="row">
+                  <div class="col-8 offset-2">
+                      <ul class="m-0 snip1155">
+                          <li><a href="./index.html">Home</a></li>
+                          <li><a href="./about.html">About Us</a></li>
+                          <li><a href="./product.html">Product</a></li>
+                          <li><a href="./blog.html">Blog</a></li>
+                          <li><a href="./contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Nav Mobile -->
+      <div id="nav-mobile" class="nav-mobile container-fluid d-lg-none">
+      <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="header-search">
+                <form action="" class="d-flex justify-content-center">
+                  <input type="text" placeholder="Search...">
+                  <button><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="header-navbar">
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  
+                  <li>
+                    <a href="./about.html"> About Us</a>
+                  </li>
+
+                  <li>
+                      <a href="./product.html">Product</a>
+                    </li>
+                    
+                  
+                  <li><a href="./blog.html">Blog</a></li>
+                 
+                  
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+  </header>
+
+  <!-- Sign In - Sign Up -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+    
+    <!-- Body -->
+    <div class="modal-body p-0">
+        <!-- Code pen -->
+        
+            
+        <div class="sing-log-wrap">
+            <div class="container">
+                <div class="row" style="background-color: transparent !important;">
+                    <div class="col-12 p-0">
+                        <div class="form-area m-0">
+                            <button type="button" class="close-btn-user p-4" data-dismiss="modal" aria-label="Close">
+                              <i class="fa fa-times"></i>
+                            </button>
+                            <div class="form-sing">
+                                <ul class="nav nav-tabs p-0" role="tablist">
+                                    <li role="presentation" ><a href="#login" aria-controls="Log In" role="tab" data-toggle="tab" class="active pb-1 Spartan-SemiBold">Sign In</a></li>
+                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class=" pb-1 Spartan-SemiBold">Sign Up</a></li>
+                                    
+                                </ul>
+    
+    
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active form-are" id="login">
+                                        <form action="">
+                                            <div class="form-bor">
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Username</label>
+                                                    <input type="text" name="username" placeholder="Your email...">
+                                                </div>
+    
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Password</label>
+                                                    <input type="password" name="password" placeholder="Your password...">
+                                                </div>
+                                                <div class="form-input-checkbox p-0 m-0">
+                                                    <input type="checkbox" id="test1" />
+                                                    <label for="test1" class="p-0 m-0">Keep me Signed in</label>
+                                                </div>
+                                                <div class="form-input-group">
+                                                    <button class="mt-5">Sing in</button>
+                                                </div>
+                                            </div><a class="forgot-pass" href="">Forgot Password?</a>
+                                        </form>
+    
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">
+                                        <form action="">
+                                            <div class="form-bor">
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Username</label>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <input type="text" name="fst-username" placeholder="Frist name">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <input type="text" name="lst-username" placeholder="Last name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Email</label>
+                                                    <input type="text" name="email" placeholder="Email">
+                                                    <input type="text" name="re-email" placeholder="Confirm email">
+                                                </div>
+    
+                                                <div class="form-input-group">
+                                                    <label for="" class="p-0 m-0">Password</label>
+                                                    <input type="password" name="password" placeholder="Password">
+                                                    <input type="password" name="password" placeholder="Confirm password">
+                                                </div>
+                                              
+                                              
+                                                <div class="form-input-group">
+                                                    <button>Sing Up</button>
+                                                </div>
+                                            </div>
+                                            <a class="forgot-pass" href="index.html">Already have an account? <strong>Sign in</strong> </a>
+                                        </form>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         
+    
+    </div>
+    
+  </div>
+</div>
+  </div>
+  
+
+    <!-- Banner -->
+    <div class="banner">
+      <div class="container-fluid banner-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3 class="banner-title">TERM</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="container mt-4 mb-5">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-0">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Term</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!----------------Term LG----------------------->
+    <div class="container d-lg-block d-none">
+      <div class="row">
+        <div class="col-12">
+          <div class="tab row mx-0">
+            <button class="tablinks col-2 active" onclick="openCity(event, 'Introduce')">Introduce</button>
+            <button class="tablinks col-2" onclick="openCity(event, 'Manual')">Manual</button>
+            <button class="tablinks col-2" onclick="openCity(event, 'Transaction')">Transaction</button>
+            <button class="tablinks col-2" onclick="openCity(event, 'Juridical')">Juridical</button>
+            <button class="tablinks col-2" onclick="openCity(event, 'Privacy')">Privacy</button>
+            <button class="tablinks col-2" onclick="openCity(event, 'Order')">Order</button>
+          </div>
+          
+          <div id="Introduce" class="tabcontent" style="display: block;">
+            <p>Welcome to Stationee.</p>
+            <p>We are Stationee Joint Stock Company with the head office at 29/1, 4th Street, Quarter 3,
+            Binh Khanh Ward, District 2, Ho Chi Minh City, transaction address: 52 Ut Tich, Ward 4 , Tan Binh District,
+            Ho Chi Minh City, established an E-commerce Exchange through the website www.stationee.vn
+            and was officially registered with the Ministry of Industry and Trade of Vietnam.</p>
+            <p>
+                When you visit our website, you agree to these terms. The Website reserves the right to change, modify, add or remove any part of these
+                Terms of Sale, at any time. Changes are effective immediately upon posting on the website without prior notice.
+                And when you continue to use the website, after changes to these Terms are posted, it means that you accept those changes.
+            </p>
+          </div>
+          
+          <div id="Manual" class="tabcontent">
+            <p>
+              When accessing our website, customers must ensure that they are at least 18 years old,
+              or access under the supervision of a parent or legal guardian. Customers ensure that they
+              have all civil acts to perform goods purchase and sale transactions in accordance with current regulations of Vietnamese law.
+            </p>
+            <p>
+                We will issue an account (Account) to use so that customers can shop on Stationee.vn website within the stated Terms and Conditions of Use.
+            </p>
+            <p>
+                You will have to sign up for an account with your credentials and update if there are any changes. Each visitor is responsible for his
+                or her own password, account and activity on the web. Furthermore, you must notify us when your account is accessed without authorization.
+                We do not accept any responsibility, directly or indirectly, for damage or loss caused by your failure to comply with the regulations.
+            </p>
+            <p>
+                Use of any part of this website for commercial purposes or on behalf of any third party is strictly prohibited without our prior written
+                permission. If we violate any of these, we will cancel the guest's account without notice.
+            </p>
+            <p>
+                During the registration process, you agree to receive promotional emails from the website. If you do not wish to continue receiving mail,
+                you may opt-out by clicking the link at the bottom of any promotional email.
+            </p>
+          </div>
+          
+          <div id="Transaction" class="tabcontent">
+            <p>In all cases, the client has the right to trade if the following measures are taken:</p>
+            <ul class="pl-3">
+              <li>
+                Notify Stationee of the transaction cancellation via hotline 1900-6035 or write a message at http://support.stationee.vn/hc/en/requests/new
+            </li>
+            <li>Return goods received but not used or any benefits from such goods (according to the return policy at https://stationee.vn/doi-tra-de-dang)</li>
+        
+            </ul>
+          </div>
+          
+          <div id="Juridical" class="tabcontent">
+            <p>The terms, conditions and content of this website are governed by the laws of Vietnam and the competent Court in Vietnam will resolve
+              any disputes arising from the unauthorized use of this website.</p>
+          </div>
+          
+          <div id="Privacy" class="tabcontent">
+              <p>Our website takes information security seriously and uses best practices to protect your information and payments.
+              Your information during the payment process will be encrypted for safety.
+              After you complete the ordering process, you will exit safe mode.</p>
+              <p>You must not use any program, tool or other means to interfere with the system or change the data structure.
+              The website also strictly prohibits the distribution, dissemination or promotion of any activities aimed at interfering,
+              destroying or infiltrating the system's data. Violating individuals or organizations will be deprived of all rights and
+              will be prosecuted before the law if necessary.</p>
+              <p>All transaction information will be kept confidential unless required by law enforcement.</p>
+          </div>
+          
+          <div id="Order" class="tabcontent">
+            <p>We have the right to refuse or cancel your order for any reason related to technical error,
+              system objectively at any time.</p>
+              <p>We have the right to refuse or cancel your order for any reason related to technical error,
+                  system objectively at any time.</p>
+              <p>We are committed to providing the most accurate price information to consumers.
+              However, sometimes errors still occur, for example, when the product price is not displayed correctly
+              on the website or the price is wrong, we will contact you for instructions or order cancellation on a case-by-case basis.
+              That's for you. We also reserve the right to refuse or cancel any order whether or not it has been confirmed or paid for.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+
+    <!----------------Term SM----------------------->
+    <div class="container d-lg-none d-block">
+      <div class="row">
+        <div class="col-12">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Introduce
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <p>Welcome to Stationee.</p>
+                  <p>We are Stationee Joint Stock Company with the head office at 29/1, 4th Street, Quarter 3,
+                  Binh Khanh Ward, District 2, Ho Chi Minh City, transaction address: 52 Ut Tich, Ward 4 , Tan Binh District,
+                  Ho Chi Minh City, established an E-commerce Exchange through the website www.stationee.vn
+                  and was officially registered with the Ministry of Industry and Trade of Vietnam.</p>
+                  <p>
+                      When you visit our website, you agree to these terms. The Website reserves the right to change, modify, add or remove any part of these
+                      Terms of Sale, at any time. Changes are effective immediately upon posting on the website without prior notice.
+                      And when you continue to use the website, after changes to these Terms are posted, it means that you accept those changes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Manual
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <p>
+                    When accessing our website, customers must ensure that they are at least 18 years old,
+                    or access under the supervision of a parent or legal guardian. Customers ensure that they
+                    have all civil acts to perform goods purchase and sale transactions in accordance with current regulations of Vietnamese law.
+                  </p>
+                  <p>
+                      We will issue an account (Account) to use so that customers can shop on Stationee.vn website within the stated Terms and Conditions of Use.
+                  </p>
+                  <p>
+                      You will have to sign up for an account with your credentials and update if there are any changes. Each visitor is responsible for his
+                      or her own password, account and activity on the web. Furthermore, you must notify us when your account is accessed without authorization.
+                      We do not accept any responsibility, directly or indirectly, for damage or loss caused by your failure to comply with the regulations.
+                  </p>
+                  <p>
+                      Use of any part of this website for commercial purposes or on behalf of any third party is strictly prohibited without our prior written
+                      permission. If we violate any of these, we will cancel the guest's account without notice.
+                  </p>
+                  <p>
+                      During the registration process, you agree to receive promotional emails from the website. If you do not wish to continue receiving mail,
+                      you may opt-out by clicking the link at the bottom of any promotional email.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Transaction
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <p>In all cases, the client has the right to trade if the following measures are taken:</p>
+            <ul class="pl-3">
+              <li>
+                Notify Stationee of the transaction cancellation via hotline 1900-6035 or write a message at http://support.stationee.vn/hc/en/requests/new
+            </li>
+            <li>Return goods received but not used or any benefits from such goods (according to the return policy at https://stationee.vn/doi-tra-de-dang)</li>
+        
+            </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Juridical
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                  <p>The terms, conditions and content of this website are governed by the laws of Vietnam and the competent Court in Vietnam will resolve
+                    any disputes arising from the unauthorized use of this website.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Privacy
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                  <p>Our website takes information security seriously and uses best practices to protect your information and payments.
+                    Your information during the payment process will be encrypted for safety.
+                    After you complete the ordering process, you will exit safe mode.</p>
+                    <p>You must not use any program, tool or other means to interfere with the system or change the data structure.
+                    The website also strictly prohibits the distribution, dissemination or promotion of any activities aimed at interfering,
+                    destroying or infiltrating the system's data. Violating individuals or organizations will be deprived of all rights and
+                    will be prosecuted before the law if necessary.</p>
+                    <p>All transaction information will be kept confidential unless required by law enforcement.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Other
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body">
+                  <p>We have the right to refuse or cancel your order for any reason related to technical error,
+                    system objectively at any time.</p>
+                    <p>We have the right to refuse or cancel your order for any reason related to technical error,
+                        system objectively at any time.</p>
+                    <p>We are committed to providing the most accurate price information to consumers.
+                    However, sometimes errors still occur, for example, when the product price is not displayed correctly
+                    on the website or the price is wrong, we will contact you for instructions or order cancellation on a case-by-case basis.
+                    That's for you. We also reserve the right to refuse or cancel any order whether or not it has been confirmed or paid for.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+	
+
+    
+
+
+
+
+
+
+
+    
+
+    <!-- Subscribe -->
+    <div class="subscribe mt-5">
+      <div class="container-fluid collection-bg py-5 mt-5">
+        <div class="container py-5">
+          
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="title text-center">
+                <h5 class="Pacifico text-main pb-2">Get Quick Notifications</h5>
+                <h3 class="Spartan-SemiBold">SUBSCRIBE FOR NEWS</h3>
+                <hr role="tournament6">
+                <form action="" class="header-search d-flex justify-content-center mt-5">
+                  <input type="text" placeholder="Enter your email...">
+                  <button><i class="fab fa-telegram-plane"></i></button>
+              </form>
+            </div>
+          </div>
+            
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="container-fluid footer-bg mt-5 pt-5">
+      <div class="container">
+          <div class="row">
+              <!-- Logo -->
+              <div class="col-lg-4 col-md-5 offset-md-1 offset-lg-0 offset-0 col-12 footer-logo mb-md-0 mb-3">
+                  <a>
+                      <img src="./images/logo.png" alt="">
+                  </a>
+
+                  <p class="py-3 pr-3 d-md-block d-none">
+                      We provide all items for students and office workers. Committed to ensuring product quality as well as service quality.
+                  </p>
+
+                  <ul class="d-flex my-md-0 my-4">
+                      <li class=""><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                      <li class=""><a href=""><i class="fab fa-twitter"></i></a></li>
+                      <li class=""><a href=""><i class="fab fa-youtube"></i></a></li>
+                      <li class=""><a href=""><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+              </div>
+              <!-- Useful Link-->
+              <div class="col-lg-2 col-md-5 offset-md-1 offset-lg-0 col-12 footer-link d-md-block d-none">
+                <h6 class="pt-2 pb-3">USEFUL LINKS</h6>
+                <ul>
+                    <li class="pb-3"><a href="./blog.html">Blog</a></li>
+                    <li class="pb-3"><a href="./faq.html">FAQ</a></li>
+                    <li class="pb-3"><a href="./news.html">News</a></li>
+                    <li class="pb-3"><a href="./contact.html">Contact</a></li>
+                    <li class="pb-3"><a href="./recruiment.html">Recruitment</a></li>
+                    <li class="pb-3"><a href="./term.html">Terms & Conditions</a></li>
+                </ul>
+              </div>
+              <!-- Useful Link Mobile-->
+              <div class="col-lg-2 col-md-6 col-12 footer-link d-md-none d-block" id="icon-useful-link">
+                <h6 class="pt-2 pb-3">USEFUL LINKS <i class="fa fa-caret-down ml-2 d-md-none d-inline"></i> </h6>
+                <ul id="box-useful-link">
+                    <li class="pb-3"><a href="./blog.html">Blog</a></li>
+                    <li class="pb-3"><a href="./faq.html">FAQ</a></li>
+                    <li class="pb-3"><a href="./news.html">News</a></li>
+                    <li class="pb-3"><a href="./contact.html">Contact</a></li>
+                    <li class="pb-3"><a href="./recruiment.html">Recruitment</a></li>
+                    <li class="pb-3"><a href="./term.html">Terms & Conditions</a></li>
+                </ul>
+              </div>
+              <!-- Categories -->
+              <div class="col-lg-3 col-md-5 offset-md-1 offset-lg-0 offset-0 col-12 footer-link categories-link d-md-block d-none">
+                <h6 class="pt-2 pb-3">CATEGORY  <i class="fa fa-caret-down ml-2 d-md-none d-inline"></i></h6>
+                <ul>
+                    <li class="pb-3"><a href="./product.html">Pen & Pencils</a></li>
+                    <li class="pb-3"><a href="./product.html">Book & Stationary </a></li>
+                    <li class="pb-3"><a href="./product.html">Decorations</a></li>
+                    <li class="pb-3"><a href="./product.html">Notebook</a></li>
+                    <li class="pb-3"><a href="./product.html">School Supplies</a></li>
+                    <li class="pb-3"><a href="./product.html">Paper & Card</a></li>
+                </ul>
+              </div>
+              <!-- Categories Mobile-->
+              <div class="col-lg-2 col-md-6 col-12 footer-link d-md-none d-block" id="icon-category">
+                <h6 class="pt-2 pb-3">CATEGORY <i class="fa fa-caret-down ml-2 d-md-none d-inline"></i> </h6>
+                <ul id="box-category">
+                  <li class="pb-3"><a href="./product.html">Pen & Pencils</a></li>
+                  <li class="pb-3"><a href="./product.html">Book & Stationary </a></li>
+                  <li class="pb-3"><a href="./product.html">Decorations</a></li>
+                  <li class="pb-3"><a href="./product.html">Notebook</a></li>
+                  <li class="pb-3"><a href="./product.html">School Supplies</a></li>
+                  <li class="pb-3"><a href="./product.html">Paper & Card</a></li>
+                </ul>
+              </div>
+              <!-- Store info -->
+              <div class="col-lg-3 col-md-5 offset-md-1 offset-lg-0 col-12 footer-link d-md-block d-none">
+                  <h6 class="pt-2 pb-3">STORE INFO</h5>
+                  <ul class="mt-3 footer-list">
+                  <li class="d-flex pb-2">
+                      <i class="fas fa-map-marker-alt pr-3"></i>
+                      <p>30 Road Fratton, Australia</p>
+                  </li>
+                  <li class="d-flex pb-2">
+                      <i class="fas fa-phone-alt pr-3"></i>
+                      <p>1-888-104-2022</p>
+                  </li>
+                  <li class="d-flex pb-2">
+                      <i class="fas fa-envelope  pr-3"></i>
+                      <p>stationee@gmail.com</p>
+                  </li>
+
+                  <h6 style="font-family: Spartan-Semibold;" class="pb-2 mt-4">Open Hours:</h6>
+                  <p>Mon – Sun: 8 AM – 9 PM</p>
+              </ul>
+              </div>
+              <!-- Store info Mobile-->
+              <div class="col-lg-3 col-md-6 col-12 footer-link d-md-none d-block" id="icon-store">
+                <h6 class="pt-2 pb-3">STORE INFO <i class="fa fa-caret-down ml-2 d-md-none d-inline"></i></h5>
+                <ul class="mt-3 footer-list" id="box-store">
+                <li class="d-flex pb-2">
+                    <i class="fas fa-map-marker-alt pr-3"></i>
+                    <p>30 Road Fratton, Australia</p>
+                </li>
+                <li class="d-flex pb-2">
+                    <i class="fas fa-phone-alt pr-3"></i>
+                    <p>1-888-104-2022</p>
+                </li>
+                <li class="d-flex pb-2">
+                    <i class="fas fa-envelope  pr-3"></i>
+                    <p>stationee@gmail.com</p>
+                </li>
+
+              </ul>
+              <h6 style="font-family: Spartan-Semibold;" class="pb-2 mt-4">Open Hours:</h6>
+              <p>Mon – Sun: 8 AM – 9 PM</p>
+            </div>
+
+              
+              
+          </div>
+      </div>
+      <!-- Copy right -->
+      <div class="container-fluid bg-main">
+          <div class="container py-2">
+              <div class="row footer-link p-0 text-white">
+                  <div class="col-12 m-0 footer-icon d-md-flex d-block justify-content-between align-items-center text-md-left text-center">
+                      <p class="m-0 pt-md-0 pt-2">© 2022 Stationee –  All rights reserved</p>
+                      
+                      <ul class="d-flex justify-content-md-between justify-content-center align-items-center m-0 mt-md-0 mt-3 pt-2">
+                          <li class=""><i class="fab fa-cc-jcb"></i></i></li>
+                          <li class="pl-3"><i class="fab fa-cc-diners-club"></i></li>
+                          <li class="pl-3"><i class="fab fa-cc-paypal"></i></li>
+                          <li class="pl-3"><i class="fab fa-cc-mastercard"></i></li>
+                          <li class="pl-3"><i class="fab fa-cc-discover"></i></li>
+                          <li class="pl-3"><i class="fab fa-cc-visa"></i></li>
+                      </ul>
+  
+                          
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+      <!-- Snipper -->
+      <script src="./js/bootstrap-input-spinner.js"></script>
+      <script src="./js/custom-editors.js"></script>
+
+    <!-- Jquery Nav Mobile -->
+    <script>
+      $(document).ready(function () {
+        // Nav Mobile
+        $("#nav-mobile").hide();
+        $("#icon-bars").click(function () {
+          $("#nav-mobile").slideToggle();
+        });
+
+        // Footer
+        // Useful Links
+        $("#box-useful-link").hide();
+        $("#icon-useful-link").click(function () {
+          $("#box-useful-link").slideToggle();
+        });
+        // Category
+        $("#box-category").hide();
+        $("#icon-category").click(function () {
+          $("#box-category").slideToggle();
+        });
+        // Store
+        $("#box-store").hide();
+        $("#icon-store").click(function () {
+          $("#box-store").slideToggle();
+        });
+
+  
+       
+       
+
+        
+        
+      });
+    </script>
+
+    <!-- Term -->
+    <script>
+      
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+
+
+
+    
+
+   
+
+    
+  </body>
+</html>
